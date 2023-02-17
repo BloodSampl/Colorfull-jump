@@ -8,4 +8,6 @@ public enum GamePlayColors
     Green,
     Blue,
     Yellow,
+    Purple,
+    Orange,
 }

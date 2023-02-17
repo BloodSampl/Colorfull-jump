@@ -25,6 +25,8 @@ public class ColorManager : MonoBehaviour
             GamePlayColors.Green => Color.green,
             GamePlayColors.Red => Color.red,
             GamePlayColors.Yellow => Color.yellow,
+            GamePlayColors.Purple => new Color(0.56f, 0.04f, 1f),
+            GamePlayColors.Orange => new Color(1f, 0.59f, 0f),
             _ => Color.black
         };
     }
