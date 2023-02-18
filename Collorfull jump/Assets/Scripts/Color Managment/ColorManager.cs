@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,4 +31,14 @@ public class ColorManager : MonoBehaviour
             _ => Color.black
         };
     }
+    public GamePlayColors GetRandomColor()
+    {
+        if(colors.Count == 0) 
+        {         
+            return GamePlayColors.Blue;
+        }
+        int randomIndex = UnityEngine.Random.Range(0, colors.Count);
+        return colors[randomIndex];
+    }
+
 }
