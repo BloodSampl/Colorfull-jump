@@ -833,8 +833,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 16.867432, y: 187.57}
-  m_SizeDelta: {x: -549.2052, y: -375.1327}
+  m_AnchoredPosition: {x: 16.86737, y: 187.57}
+  m_SizeDelta: {x: -422.1143, y: -375.1327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &461148343
 MonoBehaviour:
@@ -1346,7 +1346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a03ec34f170d9945af948dd41c20e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colors: 010000000200000003000000000000000400000005000000
+  colors: 01000000020000000300000000000000
 --- !u!4 &640308591
 Transform:
   m_ObjectHideFlags: 0
@@ -1728,6 +1728,7 @@ GameObject:
   - component: {fileID: 830440641}
   - component: {fileID: 830440642}
   - component: {fileID: 830440643}
+  - component: {fileID: 830440644}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1877,6 +1878,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorStore: {fileID: 640308590}
   displayer: {fileID: 461148346}
+--- !u!114 &830440644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830440637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffc4f814c22b13d498b842f390bb4b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorManager: {fileID: 640308590}
 --- !u!1 &868986875
 GameObject:
   m_ObjectHideFlags: 0
