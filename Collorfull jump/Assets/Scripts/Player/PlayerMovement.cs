@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float jumpForce;
+    [SerializeField] AudioSource jumpingSound;
     Rigidbody2D rb;
     Vector2 velocity;
     private bool isGrounded;
@@ -29,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            jumpingSound.Play();
             isGrounded = false;
         }
     }

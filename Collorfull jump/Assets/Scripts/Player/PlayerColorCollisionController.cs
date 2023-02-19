@@ -7,6 +7,7 @@ public class PlayerColorCollisionController : MonoBehaviour
 {
     [SerializeField] ColorManager colorStore;
     [SerializeField] ColorDisplayer displayer;
+    [SerializeField] AudioSource pickUpSound;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Collectble")
@@ -17,6 +18,7 @@ public class PlayerColorCollisionController : MonoBehaviour
                 colorStore.RemoveCurrentColor();
                 displayer.UpdateUI();
                 Destroy(collision.gameObject);
+                pickUpSound.Play();
             }
             else
             {
