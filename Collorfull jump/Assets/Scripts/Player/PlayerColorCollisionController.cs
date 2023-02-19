@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerColorCollisionController : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class PlayerColorCollisionController : MonoBehaviour
             }
             else
             {
-                Debug.Log("Wrong Color");
+                SceneManager.LoadScene("GameOver");              
             }
         }
     }
