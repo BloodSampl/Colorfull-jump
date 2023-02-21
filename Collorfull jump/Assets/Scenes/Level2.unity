@@ -308,6 +308,7 @@ MonoBehaviour:
   - {fileID: 1460006740}
   - {fileID: 1033408149}
   - {fileID: 430657925}
+  - {fileID: 866617729}
 --- !u!4 &66414517
 Transform:
   m_ObjectHideFlags: 0
@@ -2710,7 +2711,7 @@ RectTransform:
   m_GameObject: {fileID: 1324502525}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1412204466}
@@ -2718,7 +2719,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 16.867432, y: 187.57}
+  m_AnchoredPosition: {x: 16.867432, y: 205}
   m_SizeDelta: {x: -422.1143, y: -375.1327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1324502527
@@ -3530,7 +3531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a03ec34f170d9945af948dd41c20e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colors: 01000000020000000300000000000000040000000500000003000000
+  colors: 010000000200000003000000000000000400000005000000
 --- !u!4 &1646797491
 Transform:
   m_ObjectHideFlags: 0
