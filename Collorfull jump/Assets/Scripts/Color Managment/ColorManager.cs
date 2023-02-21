@@ -37,8 +37,12 @@ public class ColorManager : MonoBehaviour
         {         
             return GamePlayColors.Blue;
         }
-        int randomIndex = UnityEngine.Random.Range(0, colors.Count);
-        return colors[randomIndex];
+        List <GamePlayColors> availbleColors = new List <GamePlayColors>(colors);
+        int randomIndex = UnityEngine.Random.Range(0, availbleColors.Count);
+        GamePlayColors randomColor = availbleColors[randomIndex];
+        availbleColors.RemoveAt(randomIndex);
+
+        return randomColor;
     }
 
 }
